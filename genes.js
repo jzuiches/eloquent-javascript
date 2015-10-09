@@ -20,6 +20,6 @@ function reduceAncestors(person, f, defaultValue)
 // this is a bunch of comment in order to make this
 // file different than the remote file on github. Then I'm
 // going to push this branch up and see if I get a fast forward this
-// git hub wont let me push to a fast forward.
+// git hub wont let me push to a non fast forward.
 // a fast forward is then the merge only adds to the branch
 // so the branch and the master have the same commit parent
