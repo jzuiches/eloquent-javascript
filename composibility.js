@@ -9,4 +9,4 @@ function average(array) {
 function age(person) { return person.died - person.born }
 function male(person) { return person.sex == "m" }
 function female(person) { return person.sex == "f"}
-console.log (average(ancestry.filter(male).map(age)))
+console.log ((average(ancestry.filter(male).map(age))).toFixed(2))
