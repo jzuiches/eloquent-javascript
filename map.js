@@ -15,8 +15,20 @@ console.log(map(overNinety, function(person){
   return person.name;
 }));
 
-//this is another comment on the master branch 
+function average(array){
+  var total = array.reduce(function (a, b){
+    return a + b;
+  })
+  return total/array.length
+}
 
-//this is the learn branch comment 
+console.log(average(ancestry.map(function(person){
+  return (person.died - person.born);
+})));
+//this is another comment on the master branch
 
-//I am making a change 
+//this is the learn branch comment
+
+//I am making a change
+
+//just messing around with the git commits
