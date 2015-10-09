@@ -1,4 +1,4 @@
-require('./ancestry')
+require('./ancestry.js')
 var ancestry = JSON.parse(ANCESTRY_FILE)
 
 var testArray = [1,2,3,4,5];
@@ -23,3 +23,11 @@ function re(array){
 };
 
 re(otherArray);
+
+console.log(ancestry.reduce(function(min, cur){
+  if (cur.born < min.born)
+    return cur;
+  else
+    return min;
+}));
+
