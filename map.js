@@ -15,6 +15,16 @@ console.log(map(overNinety, function(person){
   return person.name;
 }));
 
+function average(array){
+  var total = array.reduce(function (a, b){
+    return a + b;
+  })
+  return total/array.length
+}
+
+console.log(average(ancestry.map(function(person){
+  return (person.died - person.born);
+})));
 //this is another comment on the master branch
 
 //this is the learn branch comment

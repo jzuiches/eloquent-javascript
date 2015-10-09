@@ -11,4 +11,4 @@ function male(person) { return person.sex == "m" }
 function female(person) { return person.sex == "f"}
 console.log ((average(ancestry.filter(male).map(age))).toFixed(2))
 
-console.log(average(ancestry.filter(male)))
+console.log(ancestry.map(age))
